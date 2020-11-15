@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+
+    <title>Cytus II Quiz - 0번 문제</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: "Noto Sans KR", sans-serif;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script>
+    <script src="https://unpkg.com/mathjs@8.0.1/lib/browser/math.js"></script>
+
+    <script type="text/javascript">
+        const questionList = {
+            "PAFF": {
+                "Body Talk": "00wIONHUHIM",
+                "Survive": "qvp-0wG0qB8",
+                "Bullet Waiting for Me (James Landino remix)": "6mT1cRZnLbg",
+                "KANATA": "94u9ttyeT2Q",
+                "Fight Another Day (Andy Tunstall remix)": "GyRSMCcz3W0",
+                "Baptism of Fire (CliqTrack Remix)": "8CuI3CsEb50",
+                "Fireflies (Funk Fiction Remix)": "tJW0xjX0E48",
+                "Gravity": "cfX1yBMQW3E",
+                "Re:Boost": "YSMvc7x6x4U",
+                "Green Hope": "oYSxyzwMS4Y",
+                "Under the same sky": "K5azqRxuEHc",
+                "Winter Games": "N_08CdLcFCg",
+                "New World": "wOC9YQSdtHI",
+                "SECRET;WEAPON": "XdjPB2V5R5s",
+                "Lilac for Anabel": "XdjPB2V5R5s",
+                "Who Am I?": "h2KFCilSf4w",
+                "More Than Diamond": "lxT1JLmb3m8",
+                "Blossoms for Life": "r3Ni5ch09xo",
+                "Recall": "go8aG3WWxo4",
+                "Sleeping Beast": "lnhUwhc-gKM"
+            },
+            "NEKO": {
+                "The Spark": "jGZFfZLweFo",
+                "Resurrection": "SYEl3gdYZgg",
+                "One Way Love": "_Mflrf4bbTI",
+                "Happiness Breeze": "NLOebW24hCw",
+                "Alterna Pt.1 -Cosmogony-": "2sqamByRByk",
+                "Zealous Hearts(Rayark Edit)": "paMRa_tdAXU",
+                "Keep it up": "kgnUL6QOmw4",
+                "CODE NAME : GAMMA": "f0fQGHz0raI",
+                "Blow my mind": "6iZ0LASJBA8",
+                "Chrome VOX": "2dhifVG9Ssg",
+                "Hard Landing": "GhWH9IBwYMM",
+                "Brain Power": "euSpklX_Jks",
+                "extinguisher": "G6e3xQ8b1I8",
+                "FUJIN Rumble": "-kqhhCswUcw",
+                "For You the Bellz Toll": "r--Pxv_V4qM",
+                "Rei": "HdcSZSLgMa0",
+                "響け！": "lFVLf6qGUcY",
+                "気楽なCloudy": "O7dY5GI5k0E",
+                "Pounding Destination": "FLzEiH1vtwE",
+                "Sdorica The Story Unfolds": "ktGRO8tCBqs",
+                "Hesitant Blade": "2765cJ8uUZo",
+                "Stewrica -Cross-": "zxUxrEJ9-O8",
+            },
+            "ROBO": {
+                "Deadly Slot Game": "AyvJYXHnVE8",
+                "Make Me Burn": "tH00HVl7wfE",
+                "Restriction": "JBNwIdhNsRQ",
+                "Luolimasi": "0Mu-EckFDvs",
+                "Claim the Game": "k2CpU7AREjI",
+                "Devillic Sphere": "QVOp9u5zYHY",
+                "Pure Powerstomper": "_q5XksfXUZI",
+                "Celestial Sounds (KIVΛ Remix)": "Zl8zVj749EQ",
+                "Grimoire of Crimson": "C7DgjT9zD3g",
+                "Dasein": "WmodaCalwK8",
+                "CHAOS": "9YV3ic-dyOQ",
+                "EMber": "FmdKyqUNV7A",
+                "Midnight": "AoISOgc89jg",
+                "Dead Point": "gva2GHdaEpA",
+                "Nocturnal Type": "Kl9DLenDG0k"
+            },
+            "Ivy": {
+                "Reset": "KQHgcSt44fw",
+                "DRG": "jyMjw0WAHOI",
+                "Sentimental Journey": "s6iGbAKddic",
+                "Biotonic": "Gm2J__huP8o",
+                "Alexandrite": "z48bwzlftZY",
+                "Tokiwatari": "5gPkjVj23IU",
+                "Purge": "wF78rgn1Fpo",
+                "Area 184": "-vH0tNKqpOI",
+                "BloodyMare": "9WWqTf4sxaY",
+                "AssaultMare": "9WWqTf4sxaY",
+                "Lunar Mare": "4MW3LsKpE6E",
+                "99 Glooms": "l-hUsYmjDZ4",
+                "Pressure": "LR3Nqo399OQ",
+                "V.": "smjVLYZEx10",
+                "Halloween Party": "KJlkG0_0Swc",
+                "conflict": "glv3cRpIkp0",
+                "Summer Zephyr": "3ZsPK1wh6QQ",
+                "Sovereign": "zWKvP1hp1HQ",
+                "paradigm-paragramme-program": "AnEetj6WcHg",
+                "Secret Garden": "77HL99_ConE"
+            },
+            "Crystal": {
+                "Effervesce": "MJLIk57tqhM",
+                "Chandelier XIII": "SndHHU7DRkU",
+                "Sunshine Duration": "Y-2E8BNptvc",
+                "Deep Dive": "P7T5MJzbSt8",
+                "βinαrΨ": "np9a-2NFctY",
+                "Dark Madness": "lIcB7XGT8RA",
+                "The Cross(feat. Silvia Su)": "hU1yuJllrR4",
+                "眷戀": "cJxgUUUMDss",
+                "Still (Piano ver.)": "5bkcpqzHI_U"
+            },
+            "Vanessa": {
+                "Anchor": "sNEORO7jiXE",
+                "syūten": "P2RB4PUSP4o",
+                "Rosa Rubus": "BRfHx9nislE",
+                "XYZ": "ZYXFo637GNc",
+                "II-V": "g1W8hiWhxy8",
+                "Chaos and Abyss -3rd Movement-": "_sSt7I_-FWc",
+                "Duality": "HQIYuIrC5no",
+                "Ra": "4SFnBx5dc8k",
+                "CHAOS //System Offline//": "dECYrc-L8jg",
+                "V. //System Offline//": "BWUZe7drv5M",
+                " ͟͝͞Ⅱ́̕": "H2k7TMT3ouA",
+                "Used to be": "hGaJNvkRfo0",
+                "The Whole Rest": "BMKACysydkg"
+            }
+        };
+
+        const overlapCheck = [];
+
+        let currentRound = 0;
+        let correct = 0;
+        let wrong = 0;
+
+        window.onload = function () {
+            CreateQuestion(GetQuestion());
+        }
+
+        function GetQuestion() {
+            let json;
+
+            const keyRandom = math.randomInt(0, Object.keys(questionList).length);
+
+            switch (keyRandom) {
+                case 1:
+                    json = questionList.PAFF;
+                    break;
+                case 2:
+                    json = questionList.NEKO;
+                    break;
+                case 3:
+                    json = questionList.ROBO;
+                    break;
+                case 4:
+                    json = questionList.Ivy;
+                    break;
+                case 5:
+                    json = questionList.Crystal;
+                    break;
+                case 6:
+                    json = questionList.Vanessa;
+                    break;
+            }
+
+            const random = math.randomInt(0, Object.keys(json).length);
+
+            const key = Object.keys(json)[random];
+
+            if (overlapCheck.includes(key)) {
+                alert("중복된 문제가 나와 새로운 문제를 만듭니다.\n이 메시지가 계속 나오면 문제를 다 푼겁니다.");
+                return GetQuestion();
+            } else
+                overlapCheck.push(key);
+
+            return [Object.keys(questionList)[keyRandom], Object.keys(json)[random], Object.values(json)[random]];
+        }
+
+        function IsCorrect(result, answer) {
+            if (result === answer) {
+                ChangeCorrect(correct + 1);
+                CreateQuestion(GetQuestion());
+            } else {
+                ChangeWrong(wrong + 1);
+                CreateQuestion(GetQuestion());
+            }
+        }
+
+        function CreateQuestion(video) {
+            RemoveQuestion();
+
+            ChangeCurrentRound(currentRound + 1);
+
+            const h3 = document.createElement("h3");
+            h3.innerHTML = `곡: ${video[1]}`;
+
+            document.getElementById("question").appendChild(h3);
+
+            const div = document.createElement("div");
+            div.id = "youtube-audio";
+
+            const dataVideo = document.createAttribute("data-video");
+            dataVideo.value = video[2];
+
+            div.attributes.setNamedItem(dataVideo);
+
+            const dataAutoPlay = document.createAttribute("data-autoplay");
+            dataAutoPlay.value = "0";
+
+            div.attributes.setNamedItem(dataAutoPlay);
+
+            const dataLoop = document.createAttribute("data-loop");
+            dataLoop.value = "1";
+
+            div.attributes.setNamedItem(dataLoop);
+
+            document.getElementById("question").appendChild(div);
+
+            const buttonPAFF = document.createElement("button");
+            buttonPAFF.id = "answer";
+            buttonPAFF.onclick = function () {
+                IsCorrect(video[0], "PAFF");
+            }
+            buttonPAFF.innerHTML = "PAFF";
+            document.getElementById("question").appendChild(buttonPAFF);
+
+            const buttonNeko = document.createElement("button");
+            buttonNeko.id = "answer";
+            buttonNeko.onclick = function () {
+                IsCorrect(video[0], "NEKO");
+            }
+            buttonNeko.innerHTML = "NEKO#ΦωΦ";
+            document.getElementById("question").appendChild(buttonNeko);
+
+            const buttonROBO = document.createElement("button");
+            buttonROBO.id = "answer";
+            buttonROBO.onclick = function () {
+                IsCorrect(video[0], "ROBO");
+            }
+            buttonROBO.innerHTML = "ROBO_Head";
+            document.getElementById("question").appendChild(buttonROBO);
+
+            const buttonIvy = document.createElement("button");
+            buttonIvy.id = "answer";
+            buttonIvy.onclick = function () {
+                IsCorrect(video[0], "Ivy");
+            }
+            buttonIvy.innerHTML = "Ivy";
+            document.getElementById("question").appendChild(buttonIvy);
+
+            const buttonCrystal = document.createElement("button");
+            buttonCrystal.id = "answer";
+            buttonCrystal.onclick = function () {
+                IsCorrect(video[0], "Crystal")
+            }
+            buttonCrystal.innerHTML = "Crystal PuNK";
+            document.getElementById("question").appendChild(buttonCrystal);
+
+            const buttonVanessa = document.createElement("button");
+            buttonVanessa.id = "answer";
+            buttonVanessa.onclick = function () {
+                IsCorrect(video[0], "Vanessa")
+            }
+            buttonVanessa.innerHTML = "Vanessa";
+            document.getElementById("question").appendChild(buttonVanessa);
+
+            onYouTubeIframeAPIReady();
+        }
+
+        function RemoveQuestion() {
+            document.getElementById("question").innerText = "";
+        }
+
+        function ChangeCurrentRound(value) {
+            currentRound = parseInt(value);
+
+            document.title = `Cytus II Quiz - ${currentRound}번째 문제`;
+            document.getElementById("round").innerText = `${currentRound}번째 문제`;
+        }
+
+        function ChangeCorrect(value) {
+            correct = parseInt(value);
+            document.getElementById("correct").innerText = `정답: ${correct}개`;
+        }
+
+        function ChangeWrong(value) {
+            wrong = parseInt(value);
+            document.getElementById("wrong").innerText = `오답: ${wrong}개`;
+        }
+    </script>
+</head>
+<body>
+<h1 id="round">0번째 문제</h1>
+
+<h2 id="correct">정답: 0개</h2>
+<h2 id="wrong">오답: 0개</h2>
+
+<div id="question"></div>
+
+<br>
+<br>
+
+<button id="start" onclick="location.href=`result.html?round=${currentRound}&correct=${correct}&wrong=${wrong}`"
+        type="button">결과 보기
+</button>
+</body>
+</html>

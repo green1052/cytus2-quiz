@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Cytus II Quiz - 결과</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: "Noto Sans KR", sans-serif;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            const arr = [];
+
+            const url = new URL(location.href);
+
+            url.searchParams.forEach(value => {
+                arr.push(value);
+            });
+
+            document.getElementById("round").innerHTML = `${arr[0]}번째 라운드`;
+            document.getElementById("correct").innerHTML = `정답: ${arr[1]}`;
+            document.getElementById("wrong").innerHTML = `오답: ${arr[2]}`;
+        }
+    </script>
+</head>
+<body>
+<h1>결과</h1>
+
+<h3 id="round">0번째 라운드</h3>
+<h3 id="correct">정답: 0개</h3>
+<h3 id="wrong">오답: 0개</h3>
+
+<button onclick="location.href='main.html'" type="button">돌아가기</button>
+</body>
+</html>
