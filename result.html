@@ -32,17 +32,17 @@
             });
 
             document.getElementById("round").innerHTML = `${arr[0]}번째 라운드`;
-            document.getElementById("correct").innerHTML = `정답: ${arr[1]}`;
-            document.getElementById("wrong").innerHTML = `오답: ${arr[2]}`;
+            document.getElementById("correct").innerHTML = `정답: ${arr[1]}개`;
+            document.getElementById("wrong").innerHTML = `오답: ${arr[2]}개`;
         }
     </script>
 </head>
 <body>
 <h1>결과</h1>
 
-<h3 id="round">0번째 라운드</h3>
-<h3 id="correct">정답: 0개</h3>
-<h3 id="wrong">오답: 0개</h3>
+<h3 id="round"></h3>
+<h3 id="correct"></h3>
+<h3 id="wrong"></h3>
 
 <button onclick="location.href='main.html'" type="button">돌아가기</button>
 </body>
