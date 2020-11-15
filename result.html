@@ -31,7 +31,7 @@
                 arr.push(value);
             });
 
-            document.getElementById("round").innerHTML = `${arr[0]}번째 라운드`;
+            document.getElementById("round").innerHTML = `${arr[0]}번의 라운드를 진행했습니다.`;
             document.getElementById("correct").innerHTML = `정답: ${arr[1]}개`;
             document.getElementById("wrong").innerHTML = `오답: ${arr[2]}개`;
         }
@@ -44,6 +44,6 @@
 <h3 id="correct"></h3>
 <h3 id="wrong"></h3>
 
-<button onclick="location.href='main.html'" type="button">돌아가기</button>
+<button onclick="location.href='/'" type="button">돌아가기</button>
 </body>
 </html>
