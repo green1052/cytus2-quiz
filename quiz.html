@@ -154,25 +154,25 @@
         function GetQuestion() {
             let json;
 
-            const keyRandom = math.randomInt(0, Object.keys(questionList).length);
+            const keyRandom = math.randomInt(0, Object.keys(questionList).length - 1);
 
             switch (keyRandom) {
-                case 1:
+                case 0:
                     json = questionList.PAFF;
                     break;
-                case 2:
+                case 1:
                     json = questionList.NEKO;
                     break;
-                case 3:
+                case 2:
                     json = questionList.ROBO;
                     break;
-                case 4:
+                case 3:
                     json = questionList.Ivy;
                     break;
-                case 5:
+                case 4:
                     json = questionList.Crystal;
                     break;
-                case 6:
+                case 5:
                     json = questionList.Vanessa;
                     break;
             }
