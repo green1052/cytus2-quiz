@@ -8,4 +8,4 @@ PAFF, NEKO#ΦωΦ, ROBO_Head, Ivy, Vanessa, Crystal PuNK
 
 무료로 해금되는 노래만 있으며 유료곡은 포함되어 있지 않습니다.
 
-[시작하기](https://cytus.green1052.ga)
+[시작하기](https://cytus2.green1052.ga)
