@@ -7,5 +7,3 @@ PAFF, NEKO#ΦωΦ, ROBO_Head, Ivy, Vanessa, Crystal PuNK
 의 노래가 퀴즈에 포함 되어있습니다. (총 99곡)
 
 무료로 해금되는 노래만 있으며 유료곡은 포함되어 있지 않습니다.
-
-[시작하기](https://cytus2.green1052.ga)
